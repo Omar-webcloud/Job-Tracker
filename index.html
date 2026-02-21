@@ -24,17 +24,20 @@
       }
     </script>
 
-    <!-- Custom Styles -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
+
+
 <body class="bg-[#f8f9fa] font-sans text-slate-800 min-h-screen">
   
   <div class="max-w-5xl mx-auto px-4 py-8 md:py-12 md:px-8">
     
-    <!-- Main Heading -->
+   
     <h1 class="text-3xl font-bold text-[#1e293b] mb-8 tracking-tight">Job Application Tracker</h1>
     
-    <!-- Stats Cards -->
+   
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-center">
           <h3 class="text-sm font-medium text-slate-500 mb-1">Total</h3>
@@ -50,29 +53,30 @@
        </div>
     </div>
 
-    <!-- Divider -->
+    
     <hr class="border-slate-200 mb-8" />
 
-    <!-- Jobs Section Header -->
+    
     <div class="flex flex-col sm:flex-row justify-between sm:items-end mb-5 gap-3">
        <h2 class="text-xl font-bold text-[#1e293b]">Available Jobs</h2>
        <span class="text-sm text-slate-500 font-medium"><span id="tab-jobs-count">8</span> jobs</span>
     </div>
 
-    <!-- Tabs Container -->
+    
     <div class="flex gap-2 mb-8" id="tabs-container">
        <button class="tab-btn active bg-blue-500 text-white border border-blue-500 px-6 py-1.5 rounded text-sm font-medium transition-colors" data-tab="all">All</button>
        <button class="tab-btn bg-white text-slate-500 border border-slate-200 hover:bg-slate-50 px-5 py-1.5 rounded text-sm font-medium transition-colors" data-tab="interview">Interview</button>
        <button class="tab-btn bg-white text-slate-500 border border-slate-200 hover:bg-slate-50 px-5 py-1.5 rounded text-sm font-medium transition-colors" data-tab="rejected">Rejected</button>
     </div>
 
-    <!-- Jobs Container -->
+    
     <div id="jobs-container" class="space-y-4">
-       <!-- Job Cards injected dynamically by JS -->
+      
+        
     </div>
     
-    <!-- Empty State -->
-    <div id="empty-state" class="hidden bg-white rounded-xl shadow-sm border border-slate-100 p-16 flex flex-col items-center justify-center text-center mt-4">
+    
+    <div id="empty-state" class="hidden bg-white rounded-xl shadow-sm border border-slate-100 p-16 flex-col items-center justify-center text-center mt-4">
         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" class="text-blue-400 mb-4 opacity-90 drop-shadow-sm" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" fill="#818CF8"/>
             <path d="M14 2V8H20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
